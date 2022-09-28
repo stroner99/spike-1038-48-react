@@ -6,7 +6,7 @@ function App () {
         <div className="App">
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
-                <h1>Prueba 2</h1>
+                <h1>Prueba 3</h1>
                 <p> Esto se ha subido a partir de github actions</p>
                 <a
                     className="App-link"
