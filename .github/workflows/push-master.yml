@@ -3,8 +3,8 @@ on:
   push:
     branches: 
       - master
-    path-ignore:
-      - ".github/**"
+    # paths-ignore:
+    #   - ".github/**"
 jobs: 
   build:
     runs-on: ubuntu-latest
@@ -14,6 +14,5 @@ jobs:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
         run: |
-          yarn
-          yarn build
+          npm build
           npx netlify-cli deploy --dir=public --prod
