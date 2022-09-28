@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build
+        run: npm run build
+      - name: Delpoy
         env:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-        run: |
-          npm run build
-          npx netlify-cli deploy --dir=public --prod
+        run: npx netlify-cli deploy --dir=public --prod
