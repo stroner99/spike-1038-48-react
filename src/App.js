@@ -7,7 +7,7 @@ function App () {
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
                 <h1>Prueba 3</h1>
-                <p> Esto se ha subido a partir de github actions</p>
+                <p> Esto se ha subido a partir de github actions a vercel</p>
                 <a
                     className="App-link"
                     href="https://reactjs.org"
